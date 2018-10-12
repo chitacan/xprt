@@ -165,6 +165,10 @@ $ npm install -g xprt
 
 </details>
 
+### `share <files...>`
+
+`files` 에 해당하는 파일들을 `private gist` 에 저장합니다.
+
 ## why?
 
 
