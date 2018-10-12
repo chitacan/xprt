@@ -4,10 +4,10 @@ const cmd = require('commander')
 const git = require('./lib/git')
 const github = require('./lib/github')
 const share = require('./lib/share')
-const {version} = require('./package')
+const {version, description} = require('./package')
 
 cmd
-  .description()
+  .description(description)
   .version(version)
 
 cmd.command('git <repos_dir>')
