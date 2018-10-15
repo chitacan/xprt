@@ -2,6 +2,12 @@
 
 git, github 에 기여한 내역을 데이터로 만들기.
 
+## prerequisites
+
+* nodejs :arrow_up: `v8.0.0`
+* git :arrow_up: `v2.0.0`
+* [git-extras](https://github.com/tj/git-extras)
+
 ## install
 
 ```
