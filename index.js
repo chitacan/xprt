@@ -22,7 +22,7 @@ cmd.command('github')
 cmd.command('share <files...>')
   .description('upload <files> to private gist.')
   .option('-p --public', 'make gist public')
-  .option('-r --raw', 'print raw url')
+  .option('-h --html', 'print gist html url')
   .action(share)
 
 cmd.parse(process.argv)
