@@ -8,6 +8,7 @@
   "dependencies": {
     "@octokit/rest": "^15.11.4",
     "async-retry": "^1.2.3",
+    "clipboardy": "^1.2.3",
     "commander": "^2.19.0",
     "execa": "^1.0.0",
     "fs-extra": "^7.0.0",
