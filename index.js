@@ -3,6 +3,7 @@
 const cmd = require('commander')
 const git = require('./lib/git')
 const github = require('./lib/github')
+const star = require('./lib/star')
 const share = require('./lib/share')
 const {version, description} = require('./package')
 
@@ -18,6 +19,11 @@ cmd.command('github')
   .alias('gh')
   .description('export github org review, comment, issue data to "github.json".')
   .action(github)
+
+cmd.command('star')
+  .alias('st')
+  .description('export github starred data to "starred.json".')
+  .action(star)
 
 cmd.command('share <files...>')
   .description('upload <files> to private gist.')
