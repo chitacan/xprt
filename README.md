@@ -1,6 +1,6 @@
 # xprt
 
-git, github 에 기여한 내역을 데이터로 만들기.
+git, github 에 기여한 내역, 활동을 데이터로 만들기.
 
 ## prerequisites
 
@@ -37,8 +37,9 @@ $ npm install -g xprt
 <summary>example</summary>
 
 ```json
-[
-  {
+{
+  "created": "2018-10-27T16:05:01.752Z",
+  "git": [{
     "project": "firejabber",
     "commits": "163",
     "files": "19",
@@ -59,9 +60,8 @@ $ npm install -g xprt
         }
       ]
     }
-  },
-  ...
-]
+  }, ...]
+}
 ```
 
 </details>
@@ -75,6 +75,7 @@ $ npm install -g xprt
 
 ```json
 {
+  "created": "2018-10-27T16:05:01.752Z",
   "authored": [{
     "owner": "awesome",
     "repo": "ohno",
@@ -185,10 +186,36 @@ $ npm install -g xprt
 
 </details>
 
+### `star`
+
+star 내역을 `starred.json` 파일에 저장합니다.
+
+<details>
+<summary>example</summary>
+
+```json
+{
+  "created": "2018-10-27T16:05:01.752Z",
+  "starred": [{
+    "starredAt": "2010-05-25T19:06:19Z",
+    "name": "scriptaculous",
+    "url": "https://github.com/awesome/ohno",
+    "languages": [{
+        "name": "JavaScript"
+    }, ...],
+    "topics": [{
+      "name": "topic"
+    }, ...]
+  }, ...]
+}
+```
+
+</details>
+
 ### `share <files...>`
 
 `files` 에 해당하는 파일들을 `private gist` 에 저장합니다.
 
 ## why?
 
-https://beta.observablehq.com/@chitacan/summary-of-my-github-org-contributions
+* https://beta.observablehq.com/@chitacan/summary-of-my-github-org-contributions
