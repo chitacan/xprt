@@ -18,6 +18,20 @@ $ npm install -g xprt
 ### `git <repos_dir>`
 
 [git summary](https://github.com/tj/git-extras/blob/master/Commands.md#git-summary) 명령어를 `repos_dir` 디렉토리에 위치한 저장소별로 수행하고, json (`git.json`) 으로 저장합니다.
+`repos_dir` 디렉토리는 아래와 같이 구성되어 있어야 합니다.
+
+```
+<repos_dir>
+└── repo1
+    ├── .git
+    └── files...
+└── repo2
+    ├── .git
+    └── files...
+└── repo3
+    ├── .git
+    └── files...
+```
 
 <details>
 <summary>example</summary>
