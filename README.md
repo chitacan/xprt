@@ -22,12 +22,12 @@ $ npm install -g xprt
 
 ```
 <repos_dir>
-└── repo1
-    ├── .git
-    └── files...
-└── repo2
-    ├── .git
-    └── files...
+├── repo1
+│   ├── .git
+│   └── files...
+├── repo2
+│   ├── .git
+│   └── files...
 └── repo3
     ├── .git
     └── files...
