@@ -201,7 +201,8 @@ star 내역을 `starred.json` 파일에 저장합니다.
     "name": "scriptaculous",
     "url": "https://github.com/awesome/ohno",
     "languages": [{
-        "name": "JavaScript"
+      "name": "JavaScript",
+      "color": "#eee"
     }, ...],
     "topics": [{
       "name": "topic"
