@@ -28,6 +28,13 @@ cmd.command('github')
   .description('export github org review, comment, issue data to result file.')
   .action(githubAction)
 
+cmd.command('all')
+  .description('export github & git data to result file.')
+  .action(async function() {
+    await gitAction.call(this);
+    await githubAction.call(this);
+  });
+
 cmd.command('star')
   .alias('st')
   .option('-o --output <output>', 'output dir', process.cwd())
