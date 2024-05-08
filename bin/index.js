@@ -20,12 +20,12 @@ cmd.command('config')
   .action(configAction)
 
 cmd.command('git')
-  .description('export summary data from git repos to "git.json".')
+  .description('export summary data from git repos to result file.')
   .action(gitAction)
 
 cmd.command('github')
   .alias('gh')
-  .description('export github org review, comment, issue data to "github.json".')
+  .description('export github org review, comment, issue data to result file.')
   .action(githubAction)
 
 cmd.command('star')
