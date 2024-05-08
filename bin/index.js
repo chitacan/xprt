@@ -12,21 +12,21 @@ const cmd = new Command();
 cmd
   .description(pkg.description)
   .version(pkg.version)
-  .option('-c --config <config>', 'config file path')
+  .option('-c --config <config>', 'config file path');
 
 cmd.command('config')
   .description('create empty config file.')
   .argument('[path]', 'config file path', process.cwd())
-  .action(configAction)
+  .action(configAction);
 
 cmd.command('git')
   .description('export summary data from git repos to result file.')
-  .action(gitAction)
+  .action(gitAction);
 
 cmd.command('github')
   .alias('gh')
   .description('export github org review, comment, issue data to result file.')
-  .action(githubAction)
+  .action(githubAction);
 
 cmd.command('all')
   .description('export github & git data to result file.')
@@ -39,6 +39,6 @@ cmd.command('star')
   .alias('st')
   .option('-o --output <output>', 'output dir', process.cwd())
   .description('export github starred data to "starred.json".')
-  .action(starAction)
+  .action(starAction);
 
-cmd.parseAsync(process.argv)
+cmd.parseAsync(process.argv);
